@@ -1,0 +1,83 @@
+.container {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.App {
+  .container {
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #inputId {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 5px;
+        font-size: 20px;
+        background-color: #ffa000;
+        border-radius: 5px;
+        &::placeholder {
+          font-size: 20px;
+        }
+      }
+      button {
+        margin-left: 10px;
+        padding: 7px 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 70%;
+        background-color: #ffd740;
+        margin-top: 10px;
+        border-radius: 2px;
+        padding: 5px;
+        .row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            width: 100%;
+          }
+          input {
+            border: 1px solid red;
+            background-color: #ffd740;
+            width: 100%;
+            outline: none;
+          }
+          button {
+            background-color: #ffa000;
+            border: 1px solid black;
+            border-radius: 3px;
+            padding: 2px 4px;
+            cursor: pointer;
+            margin-top: 3px;
+          }
+          .function {
+            display: flex;
+            align-items: center;
+            i {
+              cursor: pointer;
+              color: red;
+              margin:0 5px;
+              &.fa-file-pen {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
